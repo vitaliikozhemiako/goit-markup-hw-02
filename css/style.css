@@ -5,6 +5,10 @@
     --primery-white-color: #fff;
 }
 
+body {
+color: var(--primery-text-color);
+}
+
 .logo {
     color: black;
 }
@@ -59,4 +63,13 @@ button {
     color: var(--primery-white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+
+.button-filter :hover {
+color: var(--accent-color)
+}
+
+.button-filter {
+    background-color: #F5F4FA;
+    color: var(--primery-text-color);
 }
