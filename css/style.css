@@ -1,5 +1,5 @@
 :root {
-    --primery-text-color: #212121;
+    --primery-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primery-white-color: #fff;
@@ -7,10 +7,16 @@
 
 body {
 color: var(--primery-text-color);
+font-family: 'Roboto', sans-serif;
+letter-spacing: 0.03em;
 }
 
 .logo {
-    color: black;
+    color: var(--title-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 }
 
 .logo-web {
@@ -22,8 +28,12 @@ color: var(--primery-text-color);
 }
 
 /* Nav */
-.site-nav a {
-    color: #212121;
+.site-nav {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
 }
 
 .site-nav :hover, 
@@ -36,26 +46,54 @@ color: var(--primery-text-color);
 }
 
 /* Hero */
-.hero {
-
-}
 
 .hero-title {
-    color: #fff;
+    color: var(--title-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* Features */ 
 
-.feature-list {
-    
+.feature-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
-.feature-title {
-    color: var(--title-text-color)
+.feature-text {
+    color: var(--primery-text-color);  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .section-title {
-    color: var(--title-text-color)
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* Team */
+
+.team-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
 }
 
 button {
@@ -65,11 +103,35 @@ button {
     border-radius: 4px;
 }
 
-.button-filter :hover {
+/* Portfolio */
+/* Button */
+
+.button-filter :hover,
+.button-filter :focus {
 color: var(--accent-color)
 }
 
 .button-filter {
     background-color: #F5F4FA;
-    color: var(--primery-text-color);
+    color: var(--title-text-color);
+    font-family: inherit;
+    cursor: pointer;
 }
+
+.portfolio-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+    color: var(--primery-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+
