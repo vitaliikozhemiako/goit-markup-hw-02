@@ -51,12 +51,12 @@ font-size: 14px;
     letter-spacing: 0.02em;
 }
 
-.nav-link a:hover, 
-.nav-link a:focus {
+.nav-link:hover, 
+.nav-link:focus {
     color: #2196F3
 }
 
-.nav-link .link.current {
+.currentlink {
     color: var(--accent-color);
 }
 
@@ -68,8 +68,8 @@ font-size: 14px;
     letter-spacing: 0.02em;
 }
 
-.contact-link :hover, 
-.contact-link :focus {
+.contact-link:hover, 
+.contact-link:focus {
     color: #2196F3
 }
 
@@ -156,13 +156,9 @@ address {
 
 /* Button */
 
-.button-filter :hover,
-.button-filter :focus {
+.button-filter:hover,
+.button-filter:focus {
 color: var(--accent-color)
-}
-
-.button-filter :active{
-    color: var(--accent-color);
 }
 
 .button-filter {
@@ -173,6 +169,11 @@ color: var(--accent-color)
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03pc;
+}
+
+.active{
+    background-color: var(--accent-color);
+    color: var(--primery-white-color)
 }
 
 
