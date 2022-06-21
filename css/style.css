@@ -2,13 +2,14 @@
     --primery-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --primery-white-color: #fff;
+    --primery-white-color: #ffffff;
 }
 
 body {
 color: var(--primery-text-color);
 font-family: 'Roboto', sans-serif;
 letter-spacing: 0.03em;
+font-size: 14px;
 }
 
 .logo {
@@ -17,6 +18,16 @@ letter-spacing: 0.03em;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo-footer {
+    color: var(--primery-white-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 .logo-web {
@@ -27,8 +38,12 @@ letter-spacing: 0.03em;
     list-style: none;
 }
 
+.link {
+    text-decoration: none; 
+}
+
 /* Nav */
-.site-nav {
+.nav-link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -36,19 +51,35 @@ letter-spacing: 0.03em;
     letter-spacing: 0.02em;
 }
 
-.site-nav :hover, 
-.site-nav :focus {
+.nav-link a:hover, 
+.nav-link a:focus {
     color: #2196F3
 }
 
-.site-nav .link.current {
+.nav-link .link.current {
     color: var(--accent-color);
 }
 
+.contact-link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+
+.contact-link :hover, 
+.contact-link :focus {
+    color: #2196F3
+}
+
 /* Hero */
+.hero {
+    background-color: #2F303A;
+}
 
 .hero-title {
-    color: var(--title-text-color);
+    color: var(--primery-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -61,21 +92,20 @@ letter-spacing: 0.03em;
 
 .feature-title {
     color: var(--title-text-color);
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .feature-text {
     color: var(--primery-text-color);  
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
 }
 
 .section-title {
     color: var(--title-text-color);
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -91,7 +121,6 @@ letter-spacing: 0.03em;
 }
 
 .team-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
 }
@@ -103,7 +132,28 @@ button {
     border-radius: 4px;
 }
 
+footer {
+    background-color: #2F303A;
+}
+
+address {
+    font-style: normal;
+}
+
+.address-map {
+    color: var(--primery-white-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address-contact {
+    color: var(--primery-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
 /* Portfolio */
+
 /* Button */
 
 .button-filter :hover,
@@ -111,16 +161,23 @@ button {
 color: var(--accent-color)
 }
 
+.button-filter :active{
+    color: var(--accent-color);
+}
+
 .button-filter {
     background-color: #F5F4FA;
     color: var(--title-text-color);
     font-family: inherit;
     cursor: pointer;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03pc;
 }
+
 
 .portfolio-title {
     color: var(--title-text-color);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -128,10 +185,21 @@ color: var(--accent-color)
 
 .portfolio-text {
     color: var(--primery-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
 
-
+/* Скрываем заголовки */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
