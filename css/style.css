@@ -43,7 +43,8 @@ font-size: 14px;
 }
 
 /* Nav */
-.nav-link {
+.nav-link,
+.contact-link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -61,11 +62,7 @@ font-size: 14px;
 }
 
 .contact-link {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
+    color: #757575
 }
 
 .contact-link:hover, 
@@ -146,10 +143,19 @@ address {
     line-height: 1.71;
 }
 
+.address-map:hover,
+.address-map:focus {
+    color: var(--accent-color);
+}
+
 .address-contact {
-    color: var(--primery-text-color);
-    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);;
     line-height: 1.71;
+}
+
+.address-contact:hover,
+.address-contact:focus {
+    color: var(--accent-color);
 }
 
 /* Portfolio */
@@ -158,13 +164,15 @@ address {
 
 .button-filter:hover,
 .button-filter:focus {
-color: var(--accent-color)
+    background-color: var(--accent-color);
+    color: var(--primery-white-color)
 }
 
 .button-filter {
     background-color: #F5F4FA;
     color: var(--title-text-color);
     font-family: inherit;
+    font-weight: 500;
     cursor: pointer;
     font-size: 16px;
     line-height: 1.62;
